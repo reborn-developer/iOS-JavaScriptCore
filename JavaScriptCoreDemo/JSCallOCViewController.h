@@ -13,7 +13,6 @@
 
 - (void)callme:(NSString *)string;
 - (void)share:(NSString *)shareUrl;
-
 @end
 
 @interface JSCallOCViewController : UIViewController

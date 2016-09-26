@@ -34,7 +34,6 @@
     [caculateBtn addTarget:self action:@selector(caculateButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:caculateBtn];
     
-    
     resultL = [[UILabel alloc] initWithFrame:CGRectMake(50, 250, 80, 30)];
     resultL.font = [UIFont systemFontOfSize:14];
     resultL.backgroundColor = [UIColor orangeColor];
@@ -42,7 +41,6 @@
     
     self.context = [[JSContext alloc] init];
     [self.context evaluateScript:[self loadJsFile:@"test"]];
-    
 }
 
 - (NSString *)loadJsFile:(NSString*)fileName
@@ -59,7 +57,6 @@
     JSValue *result = [function callWithArguments:@[inputNumber]];
     
     resultL.text = [NSString stringWithFormat:@"%@",[result toNumber]];
-    
 }
 
 @end
