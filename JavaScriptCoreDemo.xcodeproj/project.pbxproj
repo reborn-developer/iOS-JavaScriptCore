@@ -15,6 +15,10 @@
 		B43AC40C1D98BB48007CA409 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B43AC40A1D98BB48007CA409 /* LaunchScreen.storyboard */; };
 		B43AC4171D98BB48007CA409 /* JavaScriptCoreDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B43AC4161D98BB48007CA409 /* JavaScriptCoreDemoTests.m */; };
 		B43AC4221D98BB48007CA409 /* JavaScriptCoreDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B43AC4211D98BB48007CA409 /* JavaScriptCoreDemoUITests.m */; };
+		B43AC4311D98BBD5007CA409 /* JSCallOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B43AC4301D98BBD5007CA409 /* JSCallOCViewController.m */; };
+		B43AC4341D98BBED007CA409 /* OCCallJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B43AC4331D98BBED007CA409 /* OCCallJSViewController.m */; };
+		B43AC4361D98BD2B007CA409 /* JavaScriptCore.html in Resources */ = {isa = PBXBuildFile; fileRef = B43AC4351D98BD2B007CA409 /* JavaScriptCore.html */; };
+		B43AC4381D98BD39007CA409 /* test.js in Resources */ = {isa = PBXBuildFile; fileRef = B43AC4371D98BD39007CA409 /* test.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		B43AC41D1D98BB48007CA409 /* JavaScriptCoreDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JavaScriptCoreDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B43AC4211D98BB48007CA409 /* JavaScriptCoreDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JavaScriptCoreDemoUITests.m; sourceTree = "<group>"; };
 		B43AC4231D98BB48007CA409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B43AC42F1D98BBD5007CA409 /* JSCallOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCallOCViewController.h; sourceTree = "<group>"; };
+		B43AC4301D98BBD5007CA409 /* JSCallOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCallOCViewController.m; sourceTree = "<group>"; };
+		B43AC4321D98BBED007CA409 /* OCCallJSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCCallJSViewController.h; sourceTree = "<group>"; };
+		B43AC4331D98BBED007CA409 /* OCCallJSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCCallJSViewController.m; sourceTree = "<group>"; };
+		B43AC4351D98BD2B007CA409 /* JavaScriptCore.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JavaScriptCore.html; sourceTree = "<group>"; };
+		B43AC4371D98BD39007CA409 /* test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +111,16 @@
 		B43AC3FB1D98BB48007CA409 /* JavaScriptCoreDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B43AC4351D98BD2B007CA409 /* JavaScriptCore.html */,
+				B43AC4371D98BD39007CA409 /* test.js */,
 				B43AC3FF1D98BB48007CA409 /* AppDelegate.h */,
 				B43AC4001D98BB48007CA409 /* AppDelegate.m */,
 				B43AC4021D98BB48007CA409 /* ViewController.h */,
 				B43AC4031D98BB48007CA409 /* ViewController.m */,
+				B43AC42F1D98BBD5007CA409 /* JSCallOCViewController.h */,
+				B43AC4301D98BBD5007CA409 /* JSCallOCViewController.m */,
+				B43AC4321D98BBED007CA409 /* OCCallJSViewController.h */,
+				B43AC4331D98BBED007CA409 /* OCCallJSViewController.m */,
 				B43AC4051D98BB48007CA409 /* Main.storyboard */,
 				B43AC4081D98BB48007CA409 /* Assets.xcassets */,
 				B43AC40A1D98BB48007CA409 /* LaunchScreen.storyboard */,
@@ -246,8 +262,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B43AC4381D98BD39007CA409 /* test.js in Resources */,
 				B43AC40C1D98BB48007CA409 /* LaunchScreen.storyboard in Resources */,
 				B43AC4091D98BB48007CA409 /* Assets.xcassets in Resources */,
+				B43AC4361D98BD2B007CA409 /* JavaScriptCore.html in Resources */,
 				B43AC4071D98BB48007CA409 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,7 +292,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B43AC4041D98BB48007CA409 /* ViewController.m in Sources */,
+				B43AC4311D98BBD5007CA409 /* JSCallOCViewController.m in Sources */,
 				B43AC4011D98BB48007CA409 /* AppDelegate.m in Sources */,
+				B43AC4341D98BBED007CA409 /* OCCallJSViewController.m in Sources */,
 				B43AC3FE1D98BB48007CA409 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 来自html中的jsCallOC标题</title>
+</head>
+<body>
+<div style="margin-top: 20px">
+<h2>JavaScript与OC的交互</h2>
+<input type="button" value="Native传值" onclick="Native.callme('jS开始调用OC本地Native咯')">
+</div>
+<div>
+<input type="button" value="oc原生Alert" onclick="deliverValue('来自HTML中的Alert信息')">
+</div>
+<div>
+<input type="button" value="Share" onclick="callShare()">
+</div>
+<script>
+    var alertShowIn = function(str){
+        alert(str);
+
+    }
+
+    var callShare = function() {
+    var shareUrl = "http://image.baidu.com/search/detail?ct=503316480&z=&tn=baiduimagedetail&ipn=d&ie=utf-8&in=24401&cl=2&lm=-1&st=-1&step_word=&rn=1&cs=&ln=1998&fmq=1402900904181_R&ic=0&s=&se=1&sme=0&tab=&width=&height=&face=0&is=&istype=2&ist=&jit=&fr=ala&ala=1&alatpl=others&pos=1&pn=1&word=图片%20动漫卡通&di=0&os=1199087710,2399135616&pi=0&objurl=http%3A%2F%2Fv.flash.beijingww.com%2Fcomic%2Fwallpaper%2Fjiqimao%2F15.jpg"
+    Native.share(shareUrl);
+    
+    }
+
+    var shareCallBack = function(){
+    alert('回调js分享success');
+    }
+</script>
+</body>
+</html>
